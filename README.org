@@ -1,0 +1,4 @@
+* Reading List
+
+Reading links generated from subscription feeds, inspired by [[https://notes.druchan.com/going-back-to-newspaper-model][Going back to the morning newspaper model]].
+Updated irregularly; the day's content may change, mainly for convenient reading away from the computer.
