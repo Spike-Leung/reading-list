@@ -121,6 +121,12 @@ body {
   word-break: break-all;
 }
 
+@media screen and (width <= 400px) {
+  :where(ol,ul) {
+    padding-inline-start: 1rem;
+  }
+}
+
 body {
   max-width: min(70ch, 100% - 4rem);
   margin-inline: auto;
