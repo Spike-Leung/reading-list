@@ -2,3 +2,5 @@
 
 Reading links generated from subscription feeds, inspired by [[https://notes.druchan.com/going-back-to-newspaper-model][Going back to the morning newspaper model]].
 Updated irregularly; the day's content may change, mainly for convenient reading away from the computer.
+
+How I build this page: [[https://taxodium.ink/export-elfeed-selected-entries-to-github-page-as-reading-list.html][导出 Elfeed 选中条目到 GitHub Page 作为 Reading List]]。
