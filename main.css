@@ -147,3 +147,15 @@ a {
 a:visited {
   color: var(--link-visited);
 }
+
+.like-button {
+  cursor: pointer;
+  user-select: none;
+  font-style: normal;
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+.like-button.liked {
+  color: var(--uchu-red-3);
+}
