@@ -166,3 +166,20 @@ a:visited {
     content: '\2665'
   }
 }
+
+.action {
+  display: flex;
+  gap: 1rem;
+
+  a:visited {
+    color: var(--link);
+  }
+
+  #like {
+    color: var(--uchu-red-3);
+  }
+}
+
+body:has(#like:checked) li:has(.like-button:not(.liked)) {
+  display: none;
+}
