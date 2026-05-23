@@ -175,7 +175,21 @@ a:visited {
     color: var(--link);
   }
 
+
   #like {
+    display: none;
+  }
+
+  .like-label {
+    cursor: pointer;
+  }
+
+  .like-label:after {
+    content: '\2661';
+  }
+
+  &:has(#like:checked) .like-label:after {
+    content: '\2665';
     color: var(--uchu-red-3);
   }
 }
