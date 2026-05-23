@@ -154,8 +154,15 @@ a:visited {
   font-style: normal;
   color: var(--text);
   transition: color 0.2s;
+
+  &:after {
+    content: '\2661'
+  }
 }
 
 .like-button.liked {
   color: var(--uchu-red-3);
+  &:after {
+    content: '\2665'
+  }
 }
