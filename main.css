@@ -140,10 +140,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--title);
+  font-family: cursive;
 }
 
 a {
   color: var(--link);
+  font-weight: 400;
+
 
   &:visited {
     color: var(--link-visited);
@@ -152,5 +155,7 @@ a {
 
 a[data-host]::after {
   content: " [" attr(data-host) "]";
-  color: var(--host);
+  color: var(--link-visited);
+  font-weight: 150;
+  font-size: .9em;
 }
