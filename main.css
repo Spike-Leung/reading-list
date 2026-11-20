@@ -93,6 +93,7 @@
   --title: var(--uchu-yin-9);
   --link: var(--uchu-blue-4);
   --link-visited: var(--uchu-gray-6);
+  --host: var(--uchu-purple-3);
 }
 
 /* ---------- Dark mode ---------- */
@@ -103,6 +104,7 @@
     --title: var(--uchu-pink-4);
     --link: var(--uchu-pink-5);
     --link-visited: var(--uchu-gray-6);
+    --host: var(--uchu-purple-2);
   }
 }
 
@@ -142,58 +144,13 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: var(--link);
-}
 
-a:visited {
-  color: var(--link-visited);
-}
-
-.like-button {
-  cursor: pointer;
-  user-select: none;
-  font-style: normal;
-  color: var(--text);
-  transition: color 0.2s;
-
-  &:after {
-    content: '\2661'
+  &:visited {
+    color: var(--link-visited);
   }
 }
 
-.like-button.liked {
-  color: var(--uchu-red-3);
-  &:after {
-    content: '\2665'
-  }
-}
-
-.action {
-  display: flex;
-  gap: 1rem;
-
-  a:visited {
-    color: var(--link);
-  }
-
-
-  #like {
-    display: none;
-  }
-
-  .like-label {
-    cursor: pointer;
-  }
-
-  .like-label:after {
-    content: '\2661';
-  }
-
-  &:has(#like:checked) .like-label:after {
-    content: '\2665';
-    color: var(--uchu-red-3);
-  }
-}
-
-body:has(#like:checked) li:has(.like-button:not(.liked)) {
-  display: none;
+a[data-host]::after {
+  content: " [" attr(data-host) "]";
+  color: var(--host);
 }
